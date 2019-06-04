@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>College Portal</title>
+<link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+  background-color: #ff0000;
+  color: white;
+  padding: 16px;
+  font-size: 46px;
+  text-align: center;
+  font-family: Times;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #322;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: purple;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+ Coursera College Portal
+</div>
+
+<marquee bgcolor="#ffccdc">
+<font face="fixedsys bold" color="darkviolet" size="5">
+Welcome to our Coursera  Website
+</font>
+</marquee>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction1()">Login
+    <i class="down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown1">
+    <a href="slogin.html">Student</a>
+    <a href="flogin.html">Faculty</a>
+    <a href="alogin.html">Admin</a>   
+	<a href="plogin.html">Parent</a>
+  </div>
+  </div> 
+  <a href="course.html">Courses</a>
+    <a href="pay.html">Payment</a>
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outsideof it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+
+<img  src="Images\1.jpg" style="width:100%">
+<h1 color="#00cc00">Coursera</h1> 
+<font color="#0099cc" size="6">
+'Improve your Software & programming Skill and knowledge with online/Virtual training on your Phone, Tablet, Laptop over the internet, using a real-time virtual learning environment. Coursera offers certified training that all demanding skill in all engineering field with different programming & simulation software like Java, C, C++, PHP, Python, SQL, JavaScript, CAD & CAE Software and many more throughout country including Delhi, Mumbai, Bengaluru, Chennai, Kolkata, Hyderabad, Pune, Ahmedabad, Kanpur, Patna etc. We offer training online, on-site, as well as customized to meet student's needs.'</font>
+
+<img  src="Images\2.jpg" style="width:100%">
+
+
+<font color="raspberry" size="8">
+<h2>Need Help?Ask Us!!!</h2></font><font size=6>
+<p>Our Research Team can help you with locating, accessing, and evaluating the resources you need for your assignments, projects, and personal needs. Requests can be as simple as locating a book for leisure reading or finding resources to support a 20-page research paper.<br> Regardless of the request, the Coursera members are here to support your research endeavors.<br>
+Make a request to our support team!!!!<br>
+For suggestions,queries,complaints,etc mail us at <b><font color="violet">info@coursera.com</font></b> 
+or contact <b><font color="violet">9876543210</font></b>
+</p></font>
+
+
+</body>
+</html>
